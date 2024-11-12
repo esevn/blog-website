@@ -8,7 +8,7 @@
   <title>Blog Website</title>
 </head>
 <body>
-      <nav class="w-full h-20 flex items-center justify-between  px-5 bg-white shadow-md">
+      <nav class="w-full h-20 flex items-center justify-between  px-5 bg-white shadow-md z-40">
         <div class="w-14 object-cover lg:hidden"><img src="./src/img/logo.png" alt=""></div>
         <div class="w-[150px] object-cover hidden lg:block"><img class="w-full h-[50px]" src="./src/img/logo-lanscape.png" alt=""></div>
 
@@ -57,11 +57,11 @@
           
           <div class="relative w-80 h-96 rounded-lg shadow-lg bg-white flex flex-col items-center justify-center px-4">
           <ul class="flex flex-col items-center gap-4 py-3 ">
-            <li class="">Home <i class="ph ph-house"></i></li>
-            <li class="">Blog <i class="ph ph-article"></i></li>
-            <li class="">Project <i class="ph ph-pencil-simple"></i></li>
-            <li class="">About <i class="ph ph-address-book"></i></li>
-            <li class="">Contact <i class="ph ph-user"></i></li>
+            <li class="font-semibold transition duration-100 ease-in hover:text-blue-600 "><a href="#">Home <i class="ph ph-house"></i></a></li>
+            <li class="font-semibold transition duration-100 ease-in hover:text-blue-600 "><a href="#">Blog <i class="ph ph-article"></i></li>
+            <li class="font-semibold transition duration-100 ease-in hover:text-blue-600 "><a href="#">Project <i class="ph ph-pencil-simple"></i></li>
+            <li class="font-semibold transition duration-100 ease-in hover:text-blue-600 "><a href="#">About <i class="ph ph-address-book"></i></li>
+            <li class="font-semibold transition duration-100 ease-in hover:text-blue-600 "><a href="#">Contact <i class="ph ph-user"></i></li>
           </ul>
 
           <button onclick="closeNavbar()" class="absolute top-5 right-5"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2366af" viewBox="0 0 256 256"><path d="M165.66,101.66,139.31,128l26.35,26.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path></svg>
@@ -72,19 +72,19 @@
 
        <!-- section pertama -->
         <section class="w-full h-full mt-10">
-          <div class="flex flex-col items-center justify-center px-4 lg:px-60">
+          <div class="flex flex-col items-center justify-center px-4">
             <div class="w-full h-fit flex flex-col space-y-4 text-center">
               <h1 class="text-3xl lg:text-5xl font-bold ">Inside Design: Stories and interviews.</h1>
               <p class="text-sm md:text-base">Subscribe to learn about new product features, the latest in technology, and updates.</p>
             </div>
-              <div class="w-full mt-12">
+              <div class="mt-12">
               <form>   
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
                     <div class="relative">
                         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                             <svg class="w-5 h-5 text-gray-500 :text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         </div>
-                        <input type="search" class="outline-none block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your email.">
+                        <input type="search" class="outline-none block p-4 pl-10 w-80 lg:w-[600px] text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your email.">
                         <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 :bg-blue-600 :hover:bg-blue-700 dark:focus:ring-blue-800">Subscribe  </button>
                     </div>
                 </form>                
@@ -99,7 +99,8 @@
               
               <img class="w-full h-full" src="./src/img/random-photo.png" alt="">
            
-            <div class="content flex flex-col gap-5 mt-2">
+            <div class="content relative flex flex-col gap-5 mt-2">
+              <i class="absolute right-0 top-10 ph-bold ph-arrow-up-right"></i>   
               <p class="text-xs font-medium text-blue-600">Olivia Rhye 20 Jan 2024</p>
               <h2 class="font-bold text-lg">Conversations with London Makr & Co.</h2>
               <p class="text-xs font-medium">We sat down with London's fast-growing brand and product design studio, Makr & Co. to find out how they've used Untitled Ul to 2x their revenue.</p>
