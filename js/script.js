@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navItems = navbar.querySelectorAll("li");
   
     navItems.forEach(item => {
-      item.addEventListener("click", function () {
+      item.addEventListener("mouseover", function () {
         // Hapus kelas 'scale-x-100' dari semua elemen span di navbar
         navItems.forEach(nav => {
           nav.querySelector("span").classList.remove("scale-x-100");
